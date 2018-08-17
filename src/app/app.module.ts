@@ -4,13 +4,13 @@ import { EventsAppComponent } from './events-app.component';
 
 
 @NgModule({
-  declarations: [
-    EventsAppComponent
-  ],
-  imports: [
+  imports: [ // Importing other modulers
     BrowserModule
   ],
-  providers: [],
+  declarations: [//Componet, pipe and directive
+    EventsAppComponent
+  ],
+  providers: [], //Services
   bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
