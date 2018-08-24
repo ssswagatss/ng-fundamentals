@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { EventsAppComponent } from './events-app.component';
+import { EventsListComponent } from './events/events-list.componnet';
+import { EventThumbnailComponent } from './events/event-thumbnail.component';
 
 
 @NgModule({
@@ -8,7 +10,9 @@ import { EventsAppComponent } from './events-app.component';
     BrowserModule
   ],
   declarations: [//Componet, pipe and directive
-    EventsAppComponent
+    EventsAppComponent,
+    EventsListComponent,
+    EventThumbnailComponent
   ],
   providers: [], //Services
   bootstrap: [EventsAppComponent]

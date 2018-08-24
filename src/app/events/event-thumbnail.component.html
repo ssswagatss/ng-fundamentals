@@ -1,0 +1,10 @@
+<div>
+    <div class="well hoverwell thumbnail">
+        <h2>{{event.name}}</h2>
+        <div>Date : {{event.date}}</div>
+        <div>Time : {{event.time}}</div>
+        <div>Price : \${{event.price}}</div>
+        <div>Location : {{event.location.address}} {{event.location.city}}, {{event.location.country}}</div>
+        <button type="button" class="btn btn-primary" (click)="handleClick()">Click Me</button>
+    </div>
+<div>
