@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
     <div>
     <h1>Upcoming Angular Events</h1>
     <hr/>
-    <event-thumbnail [event]="event" (eventClick)="handleEventOnParent($event)"></event-thumbnail>
+    <event-thumbnail #thumbnail [event]="event"></event-thumbnail>
+    {{thumbnail.someProperty}}
+    <button type="button" class="btn btn-primary" (click)="thumbnail.logDataOnChildComponent()">Click Me</button>
     <div>
   ` ,
 })
@@ -24,8 +26,5 @@ export class EventsListComponent {
                 city:'London',
                 country:'England'
         }
-    }
-    handleEventOnParent($event){
-        console.log($event);
     }
 }

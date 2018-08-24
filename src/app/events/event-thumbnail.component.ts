@@ -8,9 +8,14 @@ export class EventThumbnailComponent {
     constructor() { }
 
     @Input() event : any;
-    @Output() eventClick=new EventEmitter();
+    // @Output() eventClick=new EventEmitter();
 
-    handleClick() : void{
-        this.eventClick.emit("Hello World!!");
+    // handleClick() : void{
+    //     this.eventClick.emit(this.event.name);
+    // }
+
+    someProperty : string = "Hello from child component";
+    logDataOnChildComponent(){
+        console.log("logDataOnChildComponent");
     }
 }
